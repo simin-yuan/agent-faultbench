@@ -1,0 +1,16 @@
+# Evidence is compared byte-for-byte across platforms, so git must never rewrite
+# its line endings. Without this, a Windows checkout with core.autocrlf=true
+# turns every CRLF-free evidence file into a "mismatch" that does not exist.
+results/** -text
+*.sse -text
+
+# Source and docs: text, always checked out with LF on every platform.
+*.py    text eol=lf
+*.md    text eol=lf
+*.toml  text eol=lf
+*.in    text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+*.ps1   text eol=lf
+*.sh    text eol=lf
+requirements.lock text eol=lf

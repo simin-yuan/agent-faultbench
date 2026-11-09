@@ -1,0 +1,2 @@
+nvidia-nat==1.9.0
+nvidia-nat-langchain[openai]==1.9.0
