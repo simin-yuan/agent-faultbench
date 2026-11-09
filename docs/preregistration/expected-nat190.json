@@ -1,0 +1,19 @@
+{
+  "case": "truncated-tool-call",
+  "source": {
+    "tool_calling_agent": "https://github.com/NVIDIA/NeMo-Agent-Toolkit/issues/2550",
+    "react_agent": "https://github.com/NVIDIA/NeMo-Agent-Toolkit/issues/2552"
+  },
+  "rules": "A cell reproduces only when all 4 fields match on all 3 runs.",
+  "truncated_sha256": "f88cc9abbcd9474de57ce2afe5ea2f3ae1389ec27995d51188207d6df891abe9",
+  "cells": [
+    {"agent": "tool_calling_agent", "variant": "chat-length", "verdict": "not-executed", "lines": null, "bytes": null, "sha256": null},
+    {"agent": "tool_calling_agent", "variant": "chat-drop", "verdict": "executed", "lines": 16, "bytes": 866, "sha256": "f88cc9abbcd9474de57ce2afe5ea2f3ae1389ec27995d51188207d6df891abe9"},
+    {"agent": "tool_calling_agent", "variant": "responses-incomplete", "verdict": "executed", "lines": 16, "bytes": 866, "sha256": "f88cc9abbcd9474de57ce2afe5ea2f3ae1389ec27995d51188207d6df891abe9"},
+    {"agent": "tool_calling_agent", "variant": "responses-drop", "verdict": "executed", "lines": 16, "bytes": 866, "sha256": "f88cc9abbcd9474de57ce2afe5ea2f3ae1389ec27995d51188207d6df891abe9"},
+    {"agent": "react_agent", "variant": "chat-length", "verdict": "executed", "lines": 16, "bytes": 866, "sha256": "f88cc9abbcd9474de57ce2afe5ea2f3ae1389ec27995d51188207d6df891abe9"},
+    {"agent": "react_agent", "variant": "chat-drop", "verdict": "executed", "lines": 16, "bytes": 866, "sha256": "f88cc9abbcd9474de57ce2afe5ea2f3ae1389ec27995d51188207d6df891abe9"},
+    {"agent": "react_agent", "variant": "responses-incomplete", "verdict": "executed", "lines": 16, "bytes": 866, "sha256": "f88cc9abbcd9474de57ce2afe5ea2f3ae1389ec27995d51188207d6df891abe9"},
+    {"agent": "react_agent", "variant": "responses-drop", "verdict": "executed", "lines": 16, "bytes": 866, "sha256": "f88cc9abbcd9474de57ce2afe5ea2f3ae1389ec27995d51188207d6df891abe9"}
+  ]
+}
