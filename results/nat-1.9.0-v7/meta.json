@@ -1,0 +1,19 @@
+{
+  "started": 1794244336.814,
+  "versions": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "nvidia_nat": "missing",
+    "nat": "?",
+    "langchain_core": "1.7.6",
+    "langchain_openai": "1.7.4",
+    "pydantic": "2.14.3"
+  },
+  "runs_per_cell": 3,
+  "expected_sources": {
+    "tool_calling_agent": "https://github.com/NVIDIA/NeMo-Agent-Toolkit/issues/2550",
+    "react_agent": "https://github.com/NVIDIA/NeMo-Agent-Toolkit/issues/2552"
+  },
+  "expected_ref": "HEAD",
+  "expected_path": "docs/preregistration/expected-nat190.json"
+}

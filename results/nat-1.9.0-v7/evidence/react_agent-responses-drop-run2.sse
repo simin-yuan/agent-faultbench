@@ -1,0 +1,21 @@
+event: response.created
+data: {"type": "response.created", "response": {"id": "r1", "object": "response", "status": "in_progress", "model": "m", "output": []}}
+
+event: response.output_item.added
+data: {"type": "response.output_item.added", "output_index": 0, "item": {"id": "fc1", "type": "function_call", "call_id": "call_1", "name": "write_file", "arguments": "", "status": "in_progress"}}
+
+event: response.function_call_arguments.delta
+data: {"type": "response.function_call_arguments.delta", "item_id": "fc1", "output_index": 0, "delta": "{\"bench_marker\": \"BENCH-A\", \"path\": \"report.txt\", \"content\": \"line 01: the quick brown fox jumps over the lazy dog\\nline 02: the quick brown fox jumps over the lazy dog\\nline 03: the quick brown fox jumps over the lazy dog\\nline 04: the quick brown fox jumps over the lazy dog\\nline 05: the quick brown fox jumps over the lazy dog\\nline 06: the quick brown fox jumps over the lazy dog\\nline 07: the quick brown fox jumps over the lazy dog\\nline 08: the quick brown fox jumps over the lazy dog\\nline 09: the quick brown fox jumps over the lazy dog\\nline 10: the quick brown fox jumps over the lazy dog\\nline 11: the quick brown fox jumps over the lazy dog\\nline 12: the quick brown fox jumps over the lazy dog\\nline 13: the quick brown fox jumps over the lazy dog\\nline 14: the quick brown fox jumps over the lazy dog\\nline 15: the quick brown fox jumps over the lazy dog\\nline 16: the quick brown fox jumps over the lazy dog\\nline 17: the quick"}
+
+event: response.output_item.added
+data: {"type": "response.output_item.added", "output_index": 0, "item": {"id": "m2", "type": "message", "role": "assistant", "status": "in_progress", "content": []}}
+
+event: response.output_text.delta
+data: {"type": "response.output_text.delta", "item_id": "m2", "output_index": 0, "content_index": 0, "delta": "Thought: I now know the final answer\nFinal Answer: Done."}
+
+event: response.output_item.done
+data: {"type": "response.output_item.done", "output_index": 0, "item": {"id": "m2", "type": "message", "role": "assistant", "status": "completed", "content": [{"type": "output_text", "text": "Thought: I now know the final answer\nFinal Answer: Done.", "annotations": []}]}}
+
+event: response.completed
+data: {"type": "response.completed", "response": {"id": "r2", "object": "response", "status": "completed", "model": "m", "output": [{"id": "m2", "type": "message", "role": "assistant", "status": "completed", "content": [{"type": "output_text", "text": "Thought: I now know the final answer\nFinal Answer: Done.", "annotations": []}]}]}}
+

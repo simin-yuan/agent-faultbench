@@ -1,0 +1,65 @@
+{
+  "records": 12,
+  "rows": [
+    {
+      "variant": "chat-length",
+      "observed": [
+        "not-executed",
+        "not-executed",
+        "not-executed"
+      ],
+      "stable": true,
+      "requests": [
+        "/chat-length/v1/chat/completions",
+        "/chat-length/v1/chat/completions"
+      ]
+    },
+    {
+      "variant": "chat-drop",
+      "observed": [
+        "not-executed",
+        "not-executed",
+        "not-executed"
+      ],
+      "stable": true,
+      "requests": [
+        "/chat-drop/v1/chat/completions",
+        "/chat-drop/v1/chat/completions"
+      ]
+    },
+    {
+      "variant": "responses-incomplete",
+      "observed": [
+        "not-measurable",
+        "not-measurable",
+        "not-measurable"
+      ],
+      "stable": true,
+      "requests": [
+        "/responses-incomplete/v1/chat/completions",
+        "/responses-incomplete/v1/chat/completions"
+      ]
+    },
+    {
+      "variant": "responses-drop",
+      "observed": [
+        "not-measurable",
+        "not-measurable",
+        "not-measurable"
+      ],
+      "stable": true,
+      "requests": [
+        "/responses-drop/v1/chat/completions",
+        "/responses-drop/v1/chat/completions"
+      ]
+    }
+  ],
+  "framework": "semantic-kernel",
+  "row_count": 1,
+  "variants": [
+    "chat-length",
+    "chat-drop",
+    "responses-incomplete",
+    "responses-drop"
+  ]
+}
