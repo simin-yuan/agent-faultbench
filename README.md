@@ -1,6 +1,6 @@
 # agent-faultbench
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.PLACEHOLDER.svg)](https://doi.org/10.5281/zenodo.PLACEHOLDER)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24143646.svg)](https://doi.org/10.5281/zenodo.24143646)
 
 **An agent's self-report says it did A. The write on disk says it did B. This benchmark measures that gap — and whether the defence stopped an action that should never have run.**
 
