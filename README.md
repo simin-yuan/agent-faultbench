@@ -74,6 +74,17 @@ In the truncated-call case, the fake model asks a tool to write a 40-line file a
 
 The NVIDIA rows reproduce two upstream reports ([#2550](https://github.com/NVIDIA/NeMo-Agent-Toolkit/issues/2550), [#2552](https://github.com/NVIDIA/NeMo-Agent-Toolkit/issues/2552)). The langchain and semantic-kernel rows are first measurements.
 
+## Suites
+
+agent-faultbench also carries three imported suites, each preserving its own evidence and results:
+
+| suite | question |
+|---|---|
+| `suites/double-exec` | one network fault: what does a framework do twice? |
+| `suites/cutoff` | a tool call whose arguments were cut off: does it run? |
+| `suites/runaway` | a model loop inside one streamed reply: does the client stop? |
+
+`python bench/run_suites.py --verify` regenerates each suite's table from its committed evidence. Results are from the original runs; the evidence is in each suite's `results/` directory.
 ## How this is measured
 
 - no API key, no hosted model: the fake server speaks the OpenAI wire formats;
