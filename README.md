@@ -100,3 +100,6 @@ Several mock-server projects ship similar fault injectors. They **produce** faul
 Apache-2.0 (`LICENSE`, `NOTICE`). Citation metadata in `CITATION.cff`.
 
 Author: **Simin Yuan**.
+## Related
+
+[agent-hang-bench](https://github.com/simin-yuan/agent-hang-bench) — a fake-server benchmark for streaming-client stalls.
