@@ -3,13 +3,12 @@ message: "If you use this benchmark, cite it as below."
 title: "agent-faultbench: does an agent's defence actually stop an action that should not run?"
 abstract: >-
   A conformance suite for agent failure modes. The judged question is the gap
-  between what an agent reports it did and what actually happened on disk. v0.2.0
-  covers truncated tool calls across three clients; expected values are read from
-  a git ref, and the evidence is the file on disk, not a log line.
+  between what an agent reports it did and what actually happened on disk. v0.3.0
+  covers truncated tool calls and carries three imported suites (double-exec, cutoff, runaway); expected values are read from a git ref, and the evidence is the file on disk, not a log line.
 authors:
   - family-names: Yuan
     given-names: Simin
-version: 0.2.0
+version: 0.3.0
 date-released: 2026-11-12
 repository-code: "https://github.com/simin-yuan/agent-faultbench"
 license: Apache-2.0
