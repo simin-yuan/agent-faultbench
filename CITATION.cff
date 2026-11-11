@@ -2,14 +2,15 @@ cff-version: 1.2.0
 message: "If you use this benchmark, cite it as below."
 title: "agent-faultbench: does an agent's defence actually stop an action that should not run?"
 abstract: >-
-  A conformance suite for agent failure modes. v0.1 measures one case: a model
-  reply that is cut off in the middle of a tool call, and whether the client
-  executes the half-written call anyway. Evidence is a file on disk, not a log line.
+  A conformance suite for agent failure modes. The judged question is the gap
+  between what an agent reports it did and what actually happened on disk. v0.2.0
+  covers truncated tool calls across three clients; expected values are read from
+  a git ref, and the evidence is the file on disk, not a log line.
 authors:
   - family-names: Yuan
     given-names: Simin
-version: 0.1.0
-date-released: 2026-11-10
+version: 0.2.0
+date-released: 2026-11-12
 repository-code: "https://github.com/simin-yuan/agent-faultbench"
 license: Apache-2.0
 type: software
@@ -19,3 +20,4 @@ keywords:
   - reliability
   - fault-injection
   - tool-calling
+  - evaluation
