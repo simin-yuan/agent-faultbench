@@ -11,7 +11,7 @@ authors:
 version: 0.3.1
 date-released: 2026-11-12
 repository-code: "https://github.com/simin-yuan/agent-faultbench"
-doi: 10.5281/zenodo.24143646
+doi: 10.5281/zenodo.24143645
 license: Apache-2.0
 type: software
 keywords:
