@@ -1,5 +1,7 @@
 # agent-faultbench
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.PLACEHOLDER.svg)](https://doi.org/10.5281/zenodo.PLACEHOLDER)
+
 **An agent's self-report says it did A. The write on disk says it did B. This benchmark measures that gap — and whether the defence stopped an action that should never have run.**
 
 Most agent checks look at what the agent says it did. These four failures happened in real work, and in every one of them the self-check was green.
