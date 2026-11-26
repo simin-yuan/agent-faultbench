@@ -178,6 +178,16 @@ BENCH_LOG=runs.jsonl python server_anthropic.py 8766 &
 ANTHROPIC_BASE_URL=http://127.0.0.1:8766/length ANTHROPIC_API_KEY=unused   claude -p "write report.txt" --dangerously-skip-permissions
 ```
 
+### Optional LangGraph.js raw-admission comparison
+
+On both tested SDK version sets, native LangGraph.js wrote 866 bytes after a
+length cutoff or clean EOF. The raw-native check and PSJ core 0.6.3 each wrote
+0 bytes in those cases. The comparison uses the same fake server and
+file-writing tool as the main benchmark.
+
+See the [admission policy](harness/js/RAW_POLICY.md) and the
+[recorded results and reproduction commands](results/js-raw-policy-windows-20261022/README.md).
+
 ## Versions
 
 | Client | Version |
